@@ -1,0 +1,19 @@
+Copyright (C) 2003,2004 Boris Wachtmeister
+
+
+Compiling
+=========
+
+just do a simple
+
+	$ make
+
+to get the binary
+
+
+Cleaning up
+===========
+
+to remove all generated and temporary files do
+
+	$ make clean
