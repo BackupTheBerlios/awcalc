@@ -46,7 +46,7 @@ using namespace std;
 
 void awcalcMain::init()
 {
-
+    readingInfoLabel->hide();
 }
 
 
@@ -63,6 +63,8 @@ void awcalcMain::fileOpen()
 	    "Input Files (*.inp *.txt *.dat)",
 	    this,
 	    "awcalc - open file dialog","Choose a file" );
+    inputTable->hide();
+    readingInfoLabel->show();
     QFile *file = new QFile( filename );
     if ( file->open( IO_ReadOnly ) ) {
 	QTextStream stream( file );
@@ -70,7 +72,7 @@ void awcalcMain::fileOpen()
 	QStringList zahlen;
 	for (int i=0; !stream.atEnd() ; ++i) {
 	    line = stream.readLine(); // line of text excluding '\n'
-	    this->inputTable->setNumRows(i+1);
+	    inputTable->setNumRows(i+1);
 	    zahlen = QStringList::split(";",line,false);
 	    if(inputTable->numCols()==0)
 	    {
@@ -87,7 +89,9 @@ void awcalcMain::fileOpen()
 	file->close();
     }
     else if(!filename.isEmpty())
-	QMessageBox::critical( this, "Fehler", filename + " konnte nicht geöffnet werden!" );
+	QMessageBox::critical( this, "Fehler", filename + " konnte nicht geöffnet werden!");
+    readingInfoLabel->hide();
+    inputTable->show();
 }
 
 

@@ -101,6 +101,22 @@
             <string>Alt+C</string>
         </property>
     </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>readingInfoLabel</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>160</x>
+                <y>190</y>
+                <width>79</width>
+                <height>16</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>reading file...</string>
+        </property>
+    </widget>
 </widget>
 <menubar>
     <property name="name">
