@@ -47,5 +47,9 @@ eingabe.c: Makefile header/eingabe.h header/main.h header/strings.h
 main.c: Makefile header/auswertung.h header/eingabe.h header/main.h header/strings.h
 
 # Regel zum Aufraeumen des Directory
-clean: 
+clean:
 	rm -f ${OBJS} ${OUTFILE} *.*~ header/*.*~
+#change to
+#del *.o
+#del fkf.exe
+#for dos-version
