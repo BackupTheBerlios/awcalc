@@ -27,7 +27,7 @@ CC=gcc
 SRC=main.c auswertung.c eingabe.c zaehlen.c sortieren.c ausgabe.c
 OBJS = $(SRC:.c=.o)
 HEADER=header/auswertung.h header/eingabe.h header/main.h header/sortieren.h header/zaehlen.h header/strings.h header/ausgabe.h
-OUTFILE=fkf
+OUTFILE=awcalc
 CFLAGS=-pipe -Wall -ansi -pedantic
 
 fkf: 	${SRC} ${OBJS} ${HEADER} Makefile
