@@ -11,7 +11,7 @@
  * for the specific language governing rights and limitations under the
  * License.
  *
- * The Original Code is "Award Auswertungs-Tool".
+ * The Original Code is "Award Calculating Tool".
  *
  * The Initial Developer of the Original Code is
  * Boris Wachtmeister.
@@ -19,7 +19,7 @@
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s):
- *	Boris Wachtmeister  < sirro 'at`  nurfuerspam 'punkt' de >
+ *	Boris Wachtmeister  < sirro 'at`  nurfuerspam `dot' de >
  * ***** END LICENSE BLOCK ***** */
 
 #include<stdio.h>
